@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+}
+#top{
+    background-image: url(../imgs/hwy.jpeg);
+    height: 1200px;
+    background-size: cover;
+}
+#middle{
+    background-color: #a3a3a3;
+    height: 1000px;
+}
+#bottom{
+    background-image: url(../imgs/miami_venice.jpeg);
+    height: 1200px;
+    background-size: cover;
+}
+#footer{
+    background-color: black;
+    height: auto;
+    color: white;
+}
+h1{
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 80px;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid white 5px;
+    padding-top: 15px;
+    background-color: black;
+}
+.nav-item a{
+    font-size: 40px;
+    color: white;
+
+}
+
+#top .btn {
+    margin-top: 2%;
+    margin-left: 45%;
+    font-size: 2.5rem;
+}
