@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <title>JDM Virtual 360</title>
@@ -35,13 +37,33 @@
         <a href="/booking" class="btn btn-light">Book Now</a>
     </div>
     <div id="middle">
-        <h1>Placeholder</h1>
+        <div class="card-deck">
+            <div class="card">
+              <img src="/static/imgs/01.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/static/imgs/05.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/static/imgs/09.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+
+              </div>
+            </div>
+          </div>
     </div>
     <div id="bottom">
         <h1>Placeholder</h1>
     </div>
     <div id="footer">
-        <h1>Placeholder</h1>
+        <a href="/admin">Admin Login</a>
         <p>Copyright JDM 360 Virtual 2020</p>
     </div>
 </body>
