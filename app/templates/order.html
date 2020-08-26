@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div id="top">
+    <div class="order">
         <ul class="nav">
             <h1>JDM 360 Virtual</h1>
             <li class="nav-item">
@@ -36,38 +36,18 @@
         </ul>
         <a href="/booking" class="btn btn-light">Book Now</a>
         <a href="/admin" class="btn btn-light">Admin</a>
-        <a href="/order" class="btn btn-light">Order</a>
-    </div>
-    <div id="middle">
-        <div class="card-deck">
-            <div class="card">
-              <img src="/static/imgs/01.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-              </div>
-            </div>
-            <div class="card">
-              <img src="/static/imgs/05.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-              </div>
-            </div>
-            <div class="card">
-              <img src="/static/imgs/09.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+        <a href="/order" class="btn btn-light">Order</a>    </div>
 
-              </div>
-            </div>
-          </div>
-    </div>
-    <div id="bottom">
-        <h1>Placeholder</h1>
-    </div>
-    <div id="footer">
-        <a href="/admin">Admin Login</a>
-        <p>Copyright JDM 360 Virtual 2020</p>
-    </div>
+    <form action="/order" method="post" id='book'>
+        {% csrf_token %}
+        <p>Name</p>
+        <input type="text" name="name">
+        <p>Phone Number</p>
+        <input type="tel" name="phone">
+        <p>Email</p>
+        <input type="email" name="email">
+        <input type="submit" class= "btn btn-primary" value="Register">
+    </form>
+</div>
 </body>
-
 </html>

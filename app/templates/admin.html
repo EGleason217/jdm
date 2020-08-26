@@ -12,7 +12,32 @@
     <title>JDM Virtual 360 - Admin Page</title>
 </head>
 <body>
+    <a href="/booking" class="btn btn-light">Book Now</a>
+    <a href="/admin" class="btn btn-light">Admin</a>
+    <a href="/order" class="btn btn-light">Order</a>
     <div class="admin_wrapper">
+        <h1>Welcome to Your Site</h1>
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Client</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for client in clients %}
+                  <tr>
+                    <th scope="row">{{client.name}}</td>
+                    <td>{{client.phone}}</td>
+                    <td>{{client.email}}</td>
+                    <td><a href=>Place Holder for Delete</a></td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+        </table>   
     <form action="/pictureup" method="post" enctype="multipart/form-data">
         {% csrf_token %}
         <input type="file" name="image">

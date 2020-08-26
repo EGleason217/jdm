@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    color: white;
 }
 #top{
     background-image: url(../imgs/hwy.jpeg);
@@ -59,4 +60,13 @@ h1{
 .card{
     margin-top: 20px;
     margin-left: 10px;
+}
+
+.order{
+    background-color: white;
+    height: max-content;
+}
+
+form #book{
+    color: white;
 }
